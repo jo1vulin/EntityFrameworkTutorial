@@ -1,0 +1,38 @@
+﻿@model EntityFrameworkTutorial.Models.Student
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(x => x.LastName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(x => x.FirstMidName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(x => x.EnrollmentDate)
+                </th>
+            </tr>
+            @foreach (var item in Model){
+                <tr>
+                    <td>
+                        @Html.DisplayFor()
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
